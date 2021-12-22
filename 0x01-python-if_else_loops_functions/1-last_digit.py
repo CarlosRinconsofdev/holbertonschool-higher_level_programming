@@ -5,7 +5,7 @@ last_digit = int(repr(number)[-1])
 
 if number < 0:
     last_digit = -(last_digit)
-elif number > 0:
+elif number >= 0:
     last_digit
 
 if last_digit > 5:
