@@ -1,4 +1,4 @@
-#!/usr/bin/pyhton3
+#!/usr/bin/phyton3
 def print_last_digit(number):
     last_digit = int(repr(number)[-1])
     print('{}'.format(last_digit), end='')
