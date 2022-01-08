@@ -6,6 +6,6 @@ if num == 1:
 elif num == 2:
     print("1 argument:")
 else:
-    print("{} arguments". format(num -1))
-for i in range (1, num):
-    print("{}: {}".format(i, argv[i]))
+    print("{} arguments". format(num - 1))
+for i in range(1, num):
+    print("{}: {}". format(i, argv[i]))
