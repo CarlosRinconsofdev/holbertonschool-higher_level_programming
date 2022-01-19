@@ -2,9 +2,6 @@
 """ class that defines a square"""
 
 
-from ctypes import sizeof
-
-
 class Square:
     """ Atributes: size (int): the size of the square """
     def __init__(self, size=0):
