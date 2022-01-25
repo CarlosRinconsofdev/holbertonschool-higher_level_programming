@@ -10,17 +10,15 @@ class Rectangle:
         """Initializes method data"
         Args:
             width (int): integer width
-            height (int): integer height        
+            height (int): integer height
         """
         self.__height = height
         self.__width = width
-
 
     @property
     def height(self):
         """Private instance height of the rectangle"""
         return self.__height
-
 
     @height.setter
     def height(self, value):
@@ -32,12 +30,10 @@ class Rectangle:
         else:
             self.__height = value
 
-
     @property
     def width(self):
         """Private instance height of the rectangle"""
         return self.__width
-
 
     @width.setter
     def width(self, value):
