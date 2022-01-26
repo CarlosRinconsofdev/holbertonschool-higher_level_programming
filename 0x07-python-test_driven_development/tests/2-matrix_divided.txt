@@ -1,0 +1,32 @@
+the ``2-matrix_divided`` module
+===============================
+
+using ``matrix_divided``
+------------------------
+
+First import ``matrix_divided`` from ``2-matrix_divided`` module:
+
+----------------------------------------------------------
+
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+
+'positive integer values'
+>>> matrix_divided([[10, 6, -6], [3, 5, 9], [3, 6, 9]], 2)
+[[5.0, 3.0, -3.0], [1.5, 2.5, 4.5], [1.5, 3.0, 4.5]]
+
+'div is a negative integer value'
+>>> matrix_divided([[5, 10, 15], [6, 8, 10], [-2, -4, -7]], -2)
+[[-2.5, -5.0, -7.5], [-3.0, -4.0, -5.0], [1.0, 2.0, 3.5]]
+
+'positive and negative floating values'
+>>> matrix_divided([[9.4, 3.6, -1.2], [4.0, 1.6, 8], [1, 2, 3]], 2.0)
+[[4.7, 1.8, -0.6], [2.0, 0.8, 4.0], [0.5, 1.0, 1.5]]
+
+'div is a string'
+>>> matrix_divided([[4, 5, -6], [3, 2, 1], [8, 9, 10]], "pote")
+Traceback (most recent call last):
+...
+TypeError: div must be a number
+
+

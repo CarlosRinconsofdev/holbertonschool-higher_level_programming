@@ -4,7 +4,7 @@ the ``0-add_integer`` module
 using ``add_integer``
 ---------------------
 
-First impor ``add_integer`` from ``0-add_integer`` module:
+First import ``add_integer`` from ``0-add_integer`` module:
 
 ----------------------------------------------------------
 
