@@ -2,8 +2,9 @@
 """
 ``Print_square`` module
 
-Function, print_square(size) 
+Function, print_square(size)
 """
+
 
 def print_square(size):
     """
