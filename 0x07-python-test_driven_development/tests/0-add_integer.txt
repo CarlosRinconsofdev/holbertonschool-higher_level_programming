@@ -72,3 +72,7 @@ TypeError: b must be an integer
 Traceback (most recent call last):
 ...
 TypeError: add_integer() missing 1 required positional argument: 'a'
+
+'b argument is empty'
+>>> add_integer(5,)
+103
