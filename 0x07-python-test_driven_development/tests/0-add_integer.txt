@@ -47,50 +47,8 @@ Traceback (most recent call last):
 ...
 TypeError: a must be an integer
 
-'a is nan'
->>> add_integer(float('nan'))
-Traceback (most recent call last):
-...
-TypeErrorgit: a must be an integer
-
-'a is an infinity float'
->>> import sys
->>> add_integer(sys.float_info.max + 1e292)
+'a = str'
+>>> add_integer('puppy')
 Traceback (most recent call last):
 ...
 TypeError: a must be an integer
-
-'b is an infinity float'
->>> import sys
->>> add_integer(3, sys.float_info.max + 1e292)
-Traceback (most recent call last):
-...
-TypeError: b must be an integer
-
-'a and b empty'
->>> add_integer()
-Traceback (most recent call last):
-...
-TypeError: add_integer() missing 1 required positional argument: 'a'
-
-'b argument is empty'
->>> add_integer(5,)
-103
-
-'b is nan'
->>> add_integer(3, float('nan'))
-Traceback (most recent call last):
-...
-TypeError: b must be an integer
-
-'a is inf'
->>> add_integer(float('inf'))
-Traceback (most recent call last):
-...
-TypeError: a must be an integer
-
-'b is inf'
->>> add_integer(3, float('inf'))
-Traceback (most recent call last):
-...
-TypeError: b must be an integer
