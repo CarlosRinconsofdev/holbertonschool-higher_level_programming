@@ -51,4 +51,11 @@ TypeError: a must be an integer
 >>> add_integer(float('nan'))
 Traceback (most recent call last):
 ...
+TypeErrorgit: a must be an integer
+
+'a is an infinity float'
+>>> import sys
+>>> add_integer(sys.float_info.max + 1e292)
+Traceback (most recent call last):
+...
 TypeError: a must be an integer
