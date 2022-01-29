@@ -5,11 +5,6 @@ Write a function that divides all elements of a matrix.
 """
 
 
-from operator import ne
-import re
-from typing import TYPE_CHECKING
-
-
 def matrix_divided(matrix, div):
     """
     Div all elements of a matrix
