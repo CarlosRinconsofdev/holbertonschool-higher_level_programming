@@ -1,0 +1,52 @@
+The ``1-my_list`` module
+========================
+
+usin ``my_list``
+----------------
+
+>>> MyList = __import__("1-my_list").MyList
+
+'A list of numbers'
+>>> my_list = MyList()
+>>> my_list.append(8)
+>>> my_list.append(10)
+>>> my_list.append(4)
+>>> my_list.print_sorted()
+[4, 8, 10]
+
+'A list of lists'
+>>> my_list = MyList()
+>>> my_list.append([16, 32, 64])
+>>> my_list.append([1, 5, 10])
+>>> my_list.append([20, 40, 60])
+>>> my_list.print_sorted()
+[[1, 5, 10], [16, 32, 64], [20, 40, 60]]
+
+'A list of tuples'
+>>> my_list = MyList()
+>>> my_list.append((12, 23, 8))
+>>> my_list.append((10, 2, 8))
+>>> my_list.append((5, 6, 7))
+>>> my_list.print_sorted()
+[(5, 6, 7), (10, 2, 8), (12, 23, 8)]
+
+'A list of boolean'
+>>> my_list = MyList()
+>>> my_list.append(False)
+>>> my_list.append(True)
+>>> my_list.append(False)
+>>> my_list.append(True)
+>>> my_list.append(False)
+>>> my_list.append(True)
+>>> my_list.append(False)
+>>> my_list.print_sorted()
+[False, False, False, False, True, True, True]
+
+'A list of strings'
+>>> my_list = MyList()
+>>> my_list.append('Carlos')
+>>> my_list.append('Alberto')
+>>> my_list.append('Rincon')
+>>> my_list.append('Alvarez')
+>>> my_list.print_sorted()
+['Alberto', 'Alvarez', 'Carlos', 'Rincon']
