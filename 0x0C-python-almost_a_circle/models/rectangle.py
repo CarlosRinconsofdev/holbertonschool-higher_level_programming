@@ -47,23 +47,23 @@ class Rectangle(Base):
         Getter for x value
         Return: Private x value
         """
-        return self.__x
+        return self.x
 
     def set_x(self, x):
         """
         setter for x value
         """
-        self.__x = x
+        self.x = x
 
     def get_y(self):
         """
         Getter for y value
         Return: Private y value
         """
-        return self.__y
+        return self.y
 
     def set_y(self, y):
         """
         setter for y value
         """
-        self.__y = y
+        self.y = y
