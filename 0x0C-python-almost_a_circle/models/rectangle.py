@@ -12,62 +12,57 @@ class Rectangle(Base):
         """Class constructor"""
         super().__init__(id)
         self.__width = width
-        self.height = height
-        self.x = x
-        self.y = y
+        self.__height = height
+        self.__x = x
+        self.__y = y
 
-    def get_width(self, width):
+    def get_width(self):
         """
         getter for width value
+        Reurn: Private width value
         """
         return self.__width
 
-    def get_width(self, width):
+    def set_width(self, width):
         """
         setter forr width value
         """
-        self.__width
+        self.__width = width
 
-    @property
-    def height(self):
+    def get_height(self):
         """
-        Property for height value
+        getter for height value
         Return: Private height value
         """
         return self.__height
 
-    @height.setter
-    def height(self, height):
+    def set_height(self, height):
         """
         setter forr width value
         """
         self.__height = height
 
-    @property
-    def x(self):
+    def get_x(self):
         """
-        Property for x value
+        Getter for x value
         Return: Private x value
         """
         return self.__x
 
-    @x.setter
-    def x(self, x):
+    def set_x(self, x):
         """
         setter for x value
         """
         self.__x = x
 
-    @property
-    def y(self):
+    def get_y(self):
         """
-        Property for y value
+        Getter for y value
         Return: Private y value
         """
         return self.__y
 
-    @y.setter
-    def y(self, y):
+    def set_y(self, y):
         """
         setter for y value
         """
