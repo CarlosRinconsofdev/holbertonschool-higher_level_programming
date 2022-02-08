@@ -46,4 +46,19 @@ class Rectangle(Base):
         """
         self.__height = value
 
+    @property
+    def x(self):
+        """
+        Property for x value
+        Return: Private x value
+        """
+        return self.__x
+
+    @x.setter
+    def x(self, value):
+        """
+        setter for x value
+        """
+        self.__x = value
+
     
