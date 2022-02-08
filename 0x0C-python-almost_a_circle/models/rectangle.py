@@ -60,3 +60,18 @@ class Rectangle(Base):
         setter for x value
         """
         self.__x = value
+
+    @property
+    def y(self):
+        """
+        Property for y value
+        Return: Private y value
+        """
+        return self.__y
+
+    @y.setter
+    def y(self, value):
+        """
+        setter for y value
+        """
+        self.__y = value
