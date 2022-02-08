@@ -34,13 +34,13 @@ class Rectangle(Base):
         getter for height value
         Return: Private height value
         """
-        return self.__height
+        return self.height
 
     def set_height(self, height):
         """
         setter forr width value
         """
-        self.__height = height
+        self.height = height
 
     def get_x(self):
         """
