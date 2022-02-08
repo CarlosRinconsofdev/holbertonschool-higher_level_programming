@@ -31,3 +31,19 @@ class Rectangle(Base):
         """
         self.__width = value
     
+    @property
+    def height(self):
+        """
+        Property for height value
+        Return: Private height value
+        """
+        return self.__height
+
+    @height.setter
+    def height(self, value):
+        """
+        setter forr width value
+        """
+        self.__height = value
+
+    
