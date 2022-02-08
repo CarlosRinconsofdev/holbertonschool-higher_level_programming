@@ -16,11 +16,3 @@ class Rectangle(Base):
         self.height = height
         self.x = x
         self.y = y
-
-    @property
-    def width(self):
-        """
-        Property for widht value
-        Return: Private width value
-        """
-        return self.__width
