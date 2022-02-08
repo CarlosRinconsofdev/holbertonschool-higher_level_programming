@@ -23,4 +23,4 @@ class Rectangle(Base):
         Property for widht value
         Return: Private width value
         """
-        return self.width
+        return self.__width
