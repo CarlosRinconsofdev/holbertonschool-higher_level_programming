@@ -10,21 +10,18 @@ class Rectangle(Base):
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """Class constructor"""
-        self.widht = width
+        super().__init__(id)
+        self.width = width
         self.height = height
         self.x = x
         self.y = y
 
-        self.id = id
-        super().__init__(id)
-
-    @property
-    def width(self):
+    @width.getter
+    def width(self, width):
         """
-        Property for width value
-        Return: Private width value
+        getter for width value
         """
-        return self.__width
+        self.__width = width
 
     @width.setter
     def width(self, width):
