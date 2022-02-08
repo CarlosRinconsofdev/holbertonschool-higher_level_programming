@@ -27,7 +27,7 @@ class Rectangle(Base):
         """
         setter forr width value
         """
-        self.width = width
+        self.__width = width
 
     def get_height(self):
         """
