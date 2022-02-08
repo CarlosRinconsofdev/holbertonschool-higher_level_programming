@@ -40,7 +40,7 @@ class Rectangle(Base):
         """
         setter forr width value
         """
-        self.height = height
+        self.__height = height
 
     def get_x(self):
         """
@@ -53,7 +53,7 @@ class Rectangle(Base):
         """
         setter for x value
         """
-        self.x = x
+        self.__x = x
 
     def get_y(self):
         """
@@ -66,4 +66,4 @@ class Rectangle(Base):
         """
         setter for y value
         """
-        self.y = y
+        self.__y = y
