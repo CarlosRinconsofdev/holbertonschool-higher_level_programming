@@ -2,7 +2,6 @@
 """
 ``Rectangle``class
 """
-from ast import Return
 from models.base import Base
 
 
@@ -16,3 +15,19 @@ class Rectangle(Base):
         self.height = height
         self.x = x
         self.y = y
+    
+    @property
+    def width(self):
+        """
+        Property for width value
+        Return: Private width value
+        """
+        return self.__width
+
+    @width.setter
+    def width(self, value):
+        """
+        setter forr width value
+        """
+        self.__width = value
+    
