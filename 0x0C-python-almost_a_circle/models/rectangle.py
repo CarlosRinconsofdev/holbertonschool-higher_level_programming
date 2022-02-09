@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """
 ``Rectangle``class
+Update the class adding the public method def area(self):
+that returns the area value of the Rectangle instance.
 """
 from models.base import Base
 
@@ -15,6 +17,13 @@ class Rectangle(Base):
         self.height = height
         self.x = x
         self.y = y
+
+    def area(self):
+        """
+        Update the class
+        Return: the area value of the Rectangle instance
+        """
+        return self.__width * self.__height
 
     @property
     def width(self):
