@@ -32,40 +32,46 @@ class Rectangle(Base):
         """
         self.__width = width
 
-    def get_height(self):
+    @property
+    def height(self):
         """
         getter for height value
         Return: Private height value
         """
         return self.__height
 
-    def set_height(self, height):
+    @height.setter
+    def height(self, height):
         """
         setter forr width value
         """
         self.__height = height
 
-    def get_x(self):
+    @property
+    def x(self):
         """
         Getter for x value
         Return: Private x value
         """
         return self.__x
 
-    def set_x(self, x):
+    @x.setter
+    def x(self, x):
         """
         setter for x value
         """
         self.__x = x
 
-    def get_y(self):
+    @property
+    def y(self):
         """
         Getter for y value
         Return: Private y value
         """
         return self.__y
 
-    def set_y(self, y):
+    @y.setter
+    def y(self, y):
         """
         setter for y value
         """
