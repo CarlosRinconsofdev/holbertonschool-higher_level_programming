@@ -2,6 +2,7 @@
 """
 ``Rectangle``class
 """
+from turtle import width
 from models.base import Base
 
 
@@ -11,11 +12,12 @@ class Rectangle(Base):
     def __init__(self, width, height, x=0, y=0, id=None):
         """Class constructor"""
         super().__init__(id)
-        self._width = width
-        self._height = height
-        self._x = x
-        self._y = y
+        self.__width = width
+        self.__height = height
+        self.__x = x
+        self.__y = y
 
+    @property
     def get_width(self):
         """
         getter for width value
@@ -23,6 +25,7 @@ class Rectangle(Base):
         """
         return self.__width
 
+    @width.setter
     def set_width(self, width):
         """
         setter forr width value
