@@ -36,7 +36,7 @@ class Rectangle(Base):
             print()
 
     @property
-    def width(self):  
+    def width(self):
         """
         getter for width value
         Reurn: Private width value
