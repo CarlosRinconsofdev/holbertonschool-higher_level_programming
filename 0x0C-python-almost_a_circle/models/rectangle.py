@@ -30,14 +30,13 @@ class Rectangle(Base):
         Update the class that prints in stdout
         the Rectangle instance with the character #
         """
-        row = '#' * self.__width + ' ' * self.__x
-        for i in range(self.__y):
+        for i in range(self.height):
+            for j in range(self.width):
+                print('#', end='')
             print()
-        for j in range(self.__height):
-            print(row)
 
     @property
-    def width(self):
+    def width(self):  
         """
         getter for width value
         Reurn: Private width value
