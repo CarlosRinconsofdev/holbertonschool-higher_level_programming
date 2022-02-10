@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """
 ``Rectangle``class
-Update the class adding the public method def area(self):
-that returns the area value of the Rectangle instance.
+Update the class adding the public method def display(self):
+that prints in stdout the Rectangle instance with the character #
 """
 from models.base import Base
 
@@ -24,6 +24,17 @@ class Rectangle(Base):
         Return: the area value of the Rectangle instance
         """
         return self.__width * self.__height
+
+    def display(self):
+        """
+        Update the class that prints in stdout
+        the Rectangle instance with the character #
+        """
+        row = '#' * self.__width + ' ' * self.__x
+        for i in range(self.__y):
+            print()
+        for j in range(self.__height):
+            print(row)
 
     @property
     def width(self):
