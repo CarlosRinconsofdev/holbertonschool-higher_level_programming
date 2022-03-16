@@ -1,2 +1,2 @@
 -- This script show how DESCRIBE a table in a DataBase in MySQL server
-DESCRIBE first_table;
+SHOW CREATE TABLE first_table;
