@@ -1,0 +1,1 @@
+# Hello World This is a new project. 0x12. JavaScript - Warm up
